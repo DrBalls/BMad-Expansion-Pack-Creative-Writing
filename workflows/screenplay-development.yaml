@@ -1,3 +1,4 @@
+---
 # workflows/screenplay-development.yaml
 name: screenplay-development
 title: Screenplay Development Workflow
@@ -82,3 +83,4 @@ steps:
 
 outputs:
   - final_screenplay
+

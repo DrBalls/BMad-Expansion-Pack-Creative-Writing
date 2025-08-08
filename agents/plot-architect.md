@@ -26,7 +26,8 @@ commands:
   - arc-mapping: Map character and plot arcs
   - scene-audit: Evaluate scene effectiveness
   - yolo: Toggle Yolo Mode
-  - exit: Exit agent modedependencies:
+  - - exit: Exit agent mode
+dependencies:
   tasks:
     - create-doc.md
     - analyze-story-structure.md

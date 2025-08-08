@@ -26,7 +26,8 @@ commands:
   - state-tracking: Design narrative variables
   - ending-design: Create satisfying conclusions
   - yolo: Toggle Yolo Mode
-  - exit: Exit agent modedependencies:
+  - - exit: Exit agent mode
+dependencies:
   tasks:
     - design-branches.md
     - create-choices.md

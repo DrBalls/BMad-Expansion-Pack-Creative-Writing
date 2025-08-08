@@ -26,7 +26,8 @@ commands:
   - genre-expectations: Verify genre satisfaction
   - emotional-impact: Assess emotional resonance
   - yolo: Toggle Yolo Mode
-  - exit: Exit agent modedependencies:
+  - - exit: Exit agent mode
+dependencies:
   tasks:
     - simulate-reading.md
     - identify-issues.md

@@ -26,7 +26,8 @@ commands:
   - economy-builder: Create economic systems
   - language-notes: Develop naming conventions
   - yolo: Toggle Yolo Mode
-  - exit: Exit agent modedependencies:
+  - - exit: Exit agent mode
+dependencies:
   tasks:
     - create-doc.md
     - design-world-system.md

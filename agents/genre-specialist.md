@@ -26,7 +26,8 @@ commands:
   - comp-titles: Suggest comparable titles
   - market-position: Analyze market placement
   - yolo: Toggle Yolo Mode
-  - exit: Exit agent modedependencies:
+  - - exit: Exit agent mode
+dependencies:
   tasks:
     - analyze-genre.md
     - audit-tropes.md

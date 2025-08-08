@@ -1,3 +1,4 @@
+---
 template:
   id: character-profile
   name: Character Profile Template
@@ -10,7 +11,6 @@ template:
 workflow:
   elicitation: true
   allow_skip: false
-  
 sections:
   - id: basics
     title: Basic Information
@@ -21,7 +21,7 @@ sections:
       - Physical description
       - Occupation/role
       - Social status
-      - First impression    
+      - First impression
   - id: psychology
     title: Psychological Profile
     instruction: |
@@ -34,7 +34,6 @@ sections:
       - Personality type/temperament
       - Defense mechanisms
     elicit: true
-    
   - id: backstory
     title: Backstory
     instruction: |
@@ -45,7 +44,7 @@ sections:
       - Past relationships
       - Failures and successes
       - Secrets held
-    elicit: true    
+    elicit: true
   - id: voice
     title: Voice & Dialog
     instruction: |
@@ -58,7 +57,6 @@ sections:
       - Humor style
       - Three sample lines
     elicit: true
-    
   - id: relationships
     title: Relationships
     instruction: |
@@ -68,7 +66,7 @@ sections:
       - Friends and allies
       - Enemies and rivals
       - Mentor figures
-      - Power dynamics    
+      - Power dynamics
   - id: arc
     title: Character Arc
     instruction: |
@@ -81,7 +79,6 @@ sections:
       - Breakthrough
       - End state
     elicit: true
-    
   - id: details
     title: Unique Details
     instruction: |
@@ -92,3 +89,4 @@ sections:
       - Pet peeves
       - Hidden talents
       - Contradictions
+

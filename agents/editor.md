@@ -26,7 +26,8 @@ commands:
   - tighten-prose: Remove redundancy
   - fact-check: Verify internal consistency
   - yolo: Toggle Yolo Mode
-  - exit: Exit agent modedependencies:
+  - - exit: Exit agent mode
+dependencies:
   tasks:
     - perform-edit.md
     - analyze-style.md

@@ -26,7 +26,8 @@ commands:
   - arc-design: Design character transformation arc
   - voice-audit: Ensure dialog consistency
   - yolo: Toggle Yolo Mode
-  - exit: Exit agent modedependencies:
+  - - exit: Exit agent mode
+dependencies:
   tasks:
     - create-doc.md
     - analyze-character.md

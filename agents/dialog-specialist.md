@@ -26,7 +26,8 @@ commands:
   - banter-builder: Develop character chemistry
   - monolog-craft: Shape powerful monologs
   - yolo: Toggle Yolo Mode
-  - exit: Exit agent modedependencies:
+  - - exit: Exit agent mode
+dependencies:
   tasks:
     - refine-dialog.md
     - build-subtext.md
