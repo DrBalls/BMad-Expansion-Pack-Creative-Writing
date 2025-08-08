@@ -1,0 +1,32 @@
+# ------------------------------------------------------------
+# 1. World Guide Template
+# ------------------------------------------------------------
+---
+template:
+  id: world-guide-tmpl
+  name: World Guide
+  description: Structured document for geography, cultures, magic systems, and history.
+  whenToUse: Draft or update world‑building details.
+  exampleOutput: world-guide.md
+---
+## {{world_name}}
+
+### Geography
+- Continents / Regions: {{regions}}
+- Key Landmarks: {{landmarks}}
+
+### Cultures & Factions
+| Culture/Faction | Values | Leadership | Tension With |
+| --------------- | ------ | ---------- | ------------ |
+| {{culture1}} | {{values1}} | {{leadership1}} | {{tension1}} |
+
+### Magic / Technology
+- Source: {{magic_source}}
+- Limitations: {{magic_limitations}}
+
+### Historical Timeline
+1. {{event1}} – {{year1}}
+2. {{event2}} – {{year2}}
+
+[[LLM: After drafting, apply tasks#advanced-elicitation]]
+...
