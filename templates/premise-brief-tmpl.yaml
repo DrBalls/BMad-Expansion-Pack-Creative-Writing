@@ -1,0 +1,31 @@
+# ------------------------------------------------------------
+# 5. Premise Brief Template
+# ------------------------------------------------------------
+---
+template:
+  id: premise-brief-tmpl
+  name: Premise Brief
+  description: One‑page document expanding a 1‑sentence idea into a paragraph with stakes.
+  whenToUse: Early ideation (Snowflake step 2 or Greenfield concept).
+  exampleOutput: premise-paragraph.md
+---
+## One‑Sentence Summary
+{{one_sentence}}
+
+## Expanded Paragraph
+{{one_paragraph}}
+
+## Protagonist
+- Name: {{protagonist_name}}
+- Desire: {{protagonist_goal}}
+- Stakes: {{protagonist_stakes}}
+
+## Antagonist or Force
+- Name/Force: {{antagonist}}
+- Opposition: {{opposition}}
+
+## Setting Snapshot
+{{setting_blurb}}
+
+[[LLM: Immediately execute tasks#advanced-elicitation]]
+...
