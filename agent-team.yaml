@@ -11,6 +11,7 @@ agents:
   - dialog-specialist
   - narrative-designer
   - genre-specialist
+  - book-critic  # newly added professional critic agent
 workflows:
   - novel-writing
   - screenplay-development
