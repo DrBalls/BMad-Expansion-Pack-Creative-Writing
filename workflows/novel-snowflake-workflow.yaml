@@ -1,17 +1,17 @@
+---
 workflow:
-  id: creative-writing-snowflake
+  id: novel-snowflake-workflow
   name: Snowflake Novel Workflow
   description: >-
-    Iteratively expands a kernel idea into a full novel following the 10‑step
-    Snowflake Method.
+    10‑step Snowflake Method culminating in professional critic review.
   phases:
     premise:
       - agent: plot-architect
-        task: brainstorm-premise        # 1‑sentence idea
+        task: brainstorm-premise
         output: premise.txt
     paragraph:
       - agent: plot-architect
-        task: expand-premise            # 1‑paragraph summary
+        task: expand-premise
         input: premise.txt
         output: premise-paragraph.md
     characters:
@@ -21,7 +21,7 @@ workflow:
         output: character-summaries.md
     synopsis:
       - agent: plot-architect
-        task: expand-synopsis           # 1‑page synopsis
+        task: expand-synopsis
         input: premise-paragraph.md
         output: synopsis.md
     deep-character:
@@ -58,6 +58,11 @@ workflow:
           - draft-manuscript.md
           - beta-notes.md
         output: final-manuscript.md
+    critique:
+      - agent: book-critic
+        task: critical-review
+        input: final-manuscript.md
+        output: critic-review.md
   completion_criteria:
-    - final-manuscript.md exists
+    - critic-review.md exists
 ...
