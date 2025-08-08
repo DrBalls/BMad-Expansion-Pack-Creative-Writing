@@ -1,0 +1,44 @@
+# ------------------------------------------------------------
+# templates/cover-design-brief-tmpl.yaml
+# ------------------------------------------------------------
+---
+template:
+  id: cover-design-brief-tmpl
+  name: Cover Design Brief
+  description: Structured form capturing creative + technical details for cover design.
+  whenToUse: During generate-cover-brief task.
+  exampleOutput: cover-brief.md
+---
+# Cover Design Brief – {{title}}
+
+## Book Metadata
+- **Title:** {{title}}
+- **Subtitle:** {{subtitle}}
+- **Author:** {{author}}
+- **Series (if any):** {{series}}
+- **Genre:** {{genre}}
+- **Target Audience:** {{audience}}
+
+## Technical Specs
+| Item | Value |
+|------|-------|
+| Trim Size | {{trim_size}} |
+| Page Count | {{page_count}} |
+| Paper Color | {{paper_color}} |
+| Print Type | {{print_type}} |
+| Matte/Glossy | {{finish}} |
+
+## Creative Direction
+- **Mood / Tone Keywords:** {{mood_keywords}}
+- **Primary Imagery:** {{imagery}}
+- **Color Palette:** {{colors}}
+- **Font Style Preferences:** {{fonts}}
+
+## Back Cover Content
+- **Blurb:** {{blurb}}
+- **Review Snippets:** {{reviews}}
+- **Author Bio:** {{author_bio}}
+- **ISBN/Barcode:** {{isbn_location}}
+
+[[LLM: After drafting, apply tasks#advanced-elicitation]]
+...
