@@ -1,0 +1,33 @@
+# ------------------------------------------------------------
+# 4. Beta Feedback Form Template
+# ------------------------------------------------------------
+---
+template:
+  id: beta-feedback-form-tmpl
+  name: Beta Feedback Form
+  description: Structured questionnaire for beta readers.
+  whenToUse: Beta reading phase.
+  exampleOutput: beta-feedback-{{reader}}.md
+---
+# Beta Reader Feedback – {{reader_name}}
+
+## Overall Impressions
+1. What worked well? {{overall_positive}}
+2. What confused or bored you? {{overall_negative}}
+
+## Characters
+- Favorite character & why: {{fav_char}}
+- Least engaging character & why: {{least_char}}
+
+## Plot & Pacing
+- High‑point scene: {{high_point}}
+- Slowest section: {{slow_section}}
+
+## Emotional Response
+Describe any strong emotions you felt while reading. {{emotions}}
+
+## Final Thoughts & Suggestions
+{{suggestions}}
+
+[[LLM: After collecting feedback, run tasks#provide-feedback to generate summary]]
+...
