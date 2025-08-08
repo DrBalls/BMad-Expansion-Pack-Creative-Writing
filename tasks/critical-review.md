@@ -1,7 +1,5 @@
 # Critical Review Task
 # ============================================================
-# Save as: tasks/critical-review.md
-# ============================================================
 ---
 task:
   id: critical-review
