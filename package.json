@@ -1,0 +1,34 @@
+{
+  "name": "@bmad-method/creative-writing",
+  "version": "1.0.0",
+  "description": "Creative Writing expansion pack for BMad Method - AI-powered fiction, screenplay, and narrative design tools",
+  "main": "index.js",
+  "keywords": [
+    "bmad-method",
+    "expansion-pack",
+    "creative-writing",
+    "fiction",
+    "novel",
+    "screenplay",
+    "narrative-design",
+    "ai-writing",
+    "storytelling"
+  ],
+  "author": "Wes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrBalls/BMad-Expansion-Pack-Creative-Writing.git"
+  },
+  "bmadExpansion": {
+    "type": "expansion-pack",
+    "category": "creative",
+    "agents": 10,
+    "workflows": 8,
+    "templates": 8,
+    "checklists": 27
+  },
+  "peerDependencies": {
+    "bmad-method": ">=1.0.0"
+  }
+}
