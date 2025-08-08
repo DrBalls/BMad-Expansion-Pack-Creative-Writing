@@ -1,9 +1,10 @@
+---
 workflow:
-  id: creative-writing-greenfield
+  id: novel-greenfield-workflow
   name: Greenfield Novel Workflow
   description: >-
-    End‑to‑end pipeline for writing a brand‑new novel: concept → outline → full draft
-    → beta feedback → final polish.
+    End‑to‑end pipeline for writing a brand‑new novel: concept → outline → draft →
+    beta feedback → polish → professional critique.
   phases:
     ideation:
       - agent: narrative-designer
@@ -27,7 +28,7 @@ workflow:
         output: story-outline.md
     drafting:
       - agent: editor
-        task: create-draft-section     # repeat per chapter
+        task: create-draft-section
         input: story-outline.md
         repeat: per-chapter
         output: draft-manuscript.md
@@ -46,6 +47,11 @@ workflow:
           - draft-manuscript.md
           - beta-notes.md
         output: polished-manuscript.md
+    critique:
+      - agent: book-critic
+        task: critical-review
+        input: polished-manuscript.md
+        output: critic-review.md
   completion_criteria:
-    - polished-manuscript.md exists
+    - critic-review.md exists
 ...
