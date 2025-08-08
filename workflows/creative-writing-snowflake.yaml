@@ -1,0 +1,63 @@
+workflow:
+  id: creative-writing-snowflake
+  name: Snowflake Novel Workflow
+  description: >-
+    Iteratively expands a kernel idea into a full novel following the 10‑step
+    Snowflake Method.
+  phases:
+    premise:
+      - agent: plot-architect
+        task: brainstorm-premise        # 1‑sentence idea
+        output: premise.txt
+    paragraph:
+      - agent: plot-architect
+        task: expand-premise            # 1‑paragraph summary
+        input: premise.txt
+        output: premise-paragraph.md
+    characters:
+      - agent: character-psychologist
+        task: develop-character
+        input: premise-paragraph.md
+        output: character-summaries.md
+    synopsis:
+      - agent: plot-architect
+        task: expand-synopsis           # 1‑page synopsis
+        input: premise-paragraph.md
+        output: synopsis.md
+    deep-character:
+      - agent: character-psychologist
+        task: character-depth-pass
+        input: character-summaries.md
+        output: characters.md
+    scene-list:
+      - agent: plot-architect
+        task: generate-scene-list
+        input:
+          - synopsis.md
+          - characters.md
+        output: scene-list.md
+    outline:
+      - agent: plot-architect
+        task: outline-scenes
+        input: scene-list.md
+        output: snowflake-outline.md
+    drafting:
+      - agent: editor
+        task: create-draft-section
+        input: snowflake-outline.md
+        repeat: per-chapter
+        output: draft-manuscript.md
+    polish:
+      - agent: beta-reader
+        task: provide-feedback
+        input: draft-manuscript.md
+        output: beta-notes.md
+      - agent: editor
+        task: incorporate-feedback
+        input:
+          - draft-manuscript.md
+          - beta-notes.md
+        output: final-manuscript.md
+  completion_criteria:
+    - final-manuscript.md exists
+...
