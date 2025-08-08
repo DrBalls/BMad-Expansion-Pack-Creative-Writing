@@ -1,0 +1,30 @@
+# ------------------------------------------------------------
+# 3. Chapter Draft Template
+# ------------------------------------------------------------
+---
+template:
+  id: chapter-draft-tmpl
+  name: Chapter Draft
+  description: Guided structure for writing a full chapter.
+  whenToUse: Drafting loop (repeat per chapter).
+  exampleOutput: chapter-{{n}}.md
+---
+## Chapter {{n}} – {{chapter_title}}
+
+> **POV:** {{pov}}
+> **Timeline:** {{timeline_marker}}
+
+### Opening Hook
+{{opening_hook}}
+
+### Rising Action
+{{rising_action}}
+
+### Climax / Turn
+{{climax}}
+
+### Resolution / New Question
+{{resolution}}
+
+[[LLM: After drafting, run tasks#workshop-dialog on dialogue blocks]]
+...
