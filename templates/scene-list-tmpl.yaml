@@ -1,0 +1,18 @@
+# ------------------------------------------------------------
+# 2. Scene List Template
+# ------------------------------------------------------------
+---
+template:
+  id: scene-list-tmpl
+  name: Scene List
+  description: Table summarizing every scene (Snowflake step 6 or outlining).
+  whenToUse: Outlining phase before drafting.
+  exampleOutput: scene-list.md
+---
+| # | POV | Setting | Goal & Conflict | Outcome | Notes |
+|---|-----|---------|-----------------|---------|-------|
+| 1 | {{pov1}} | {{setting1}} | {{goal1}} | {{outcome1}} | {{notes1}} |
+| 2 | {{pov2}} | {{setting2}} | {{goal2}} | {{outcome2}} | {{notes2}} |
+
+[[LLM: After section completion, apply tasks#advanced-elicitation]]
+...
