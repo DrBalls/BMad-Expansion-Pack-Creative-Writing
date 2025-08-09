@@ -1,4 +1,4 @@
----
+```yaml
 agent:
   name: Editor
   id: editor
