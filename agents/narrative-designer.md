@@ -1,4 +1,4 @@
----
+```yaml
 agent:
   name: Narrative Designer
   id: narrative-designer
