@@ -1,4 +1,4 @@
----
+```yaml
 agent:
   name: World Builder
   id: world-builder
