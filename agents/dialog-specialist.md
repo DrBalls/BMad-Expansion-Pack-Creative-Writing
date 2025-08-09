@@ -1,4 +1,4 @@
----
+```yaml
 agent:
   name: Dialog Specialist
   id: dialog-specialist
