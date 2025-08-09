@@ -1,4 +1,4 @@
----
+```yaml
 agent:
   name: Genre Specialist
   id: genre-specialist
