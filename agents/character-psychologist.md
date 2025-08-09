@@ -1,4 +1,4 @@
----
+```yaml
 agent:
   name: Character Psychologist
   id: character-psychologist
