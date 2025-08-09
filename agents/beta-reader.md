@@ -1,4 +1,4 @@
----
+```yaml
 agent:
   name: Beta Reader
   id: beta-reader
