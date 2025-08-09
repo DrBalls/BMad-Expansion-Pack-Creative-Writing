@@ -1,4 +1,4 @@
----
+```yaml
 agent:
   name: Plot Architect
   id: plot-architect
